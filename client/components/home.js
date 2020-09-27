@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
+import Head from './head'
 import Header from './header'
 import Main from './main'
 import User from './user'
@@ -9,6 +10,7 @@ import Dashboard from './dashboard'
 const Home = () => {
   return (
     <div>
+      <Head title="Hello" />
       <Header />
       <Switch>
         <Route exact path="/dashboard/" component={() => <Dashboard />} />
