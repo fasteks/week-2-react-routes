@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import Header from './header'
 
 const User = () => {
-  const { username } = useParams()
+  const { user } = useParams()
   return (
     <div>
       <Header />
@@ -17,7 +17,7 @@ const User = () => {
           <div>
             <Link to="/dashboard/main">Go To Main</Link>
           </div>
-          <div id={username}>{username}</div>
+          <div id="username">{user}</div>
         </div>
       </div>
     </div>
