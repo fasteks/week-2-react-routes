@@ -5,8 +5,12 @@ const Main = () => {
   return (
     <div>
       <div id="title">Main</div>
-      <Link to="/dashboard/profile/71cfff71-34e1-46eb-95ad-29637d913771">Go To Profile</Link>
-      <Link to="/dashboard">Go To Root</Link>
+      <div>
+        <Link to="/dashboard/profile/71cfff71-34e1-46eb-95ad-29637d913771">Go To Profile</Link>
+      </div>
+      <div>
+        <Link to="/dashboard">Go To Root</Link>
+      </div>
     </div>
   )
 }
