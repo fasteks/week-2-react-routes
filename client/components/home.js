@@ -3,9 +3,9 @@ import { Switch, Route } from 'react-router-dom'
 
 import Head from './head'
 import Header from './header'
-import Main from './main'
-import User from './user'
 import Dashboard from './dashboard'
+import Main from './main'
+import Profile from './profile'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <Switch>
         <Route exact path="/dashboard/" component={() => <Dashboard />} />
         <Route exact path="/dashboard/main" component={() => <Main />} />
-        <Route exact path="/dashboard/profile/:user" component={() => <User />} />
+        <Route exact path="/dashboard/profile/:user" component={() => <Profile />} />
       </Switch>
     </div>
   )
