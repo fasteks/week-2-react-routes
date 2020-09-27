@@ -8,7 +8,10 @@ const Profile = () => {
   return (
     <div>
       <Head title="Hello" />
-      <div id="title" className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
+      <div
+        id="title"
+        className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10"
+      >
         Profile
       </div>
       <div>

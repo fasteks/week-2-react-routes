@@ -27,8 +27,6 @@ const Header = () => {
       {toggled && (
         <div id="menu" className="block">
           <a
-            rel="noopener noreferrer"
-            target="_blank"
             href="https://www.google.com/"
             className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
           >
