@@ -1,15 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Header from './header'
+import Main from './main'
+import User from './user'
+import Dashboard from './dashboard'
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <div id="title">Dashboard</div>
-      <Link to="/dashboard/main">Go To Main</Link>
-      <Link to="/dashboard/profile/71cfff71-34e1-46eb-95ad-29637d913771">Go To Profile</Link>
+      <Switch>
+        <Route exact path="/dashboard/" component={() => <Dashboard />} />
+        <Route exact path="/dashboard/main" component={() => <Main />} />
+        <Route exact path="/dashboard/profile/:user" component={() => <User />} />
+      </Switch>
     </div>
   )
 }
